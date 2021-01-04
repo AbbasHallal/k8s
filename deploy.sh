@@ -1,6 +1,6 @@
-docker build -t abbas/multi-client:latest -t  abbas/multi-client:$SHA -f ../../complex/client/Dockerfile ../../complex/client/
-docker build -t abbas/multi-server:latest -t abbas/multi-server:$SHA -f ../../complex/server/Dockerfile ../../complex/server/
-docker build -t abbas/multi-workeri:lastest -t abbas/multi-worker:$SHA -f ../../complex/worker/Dockerfile ../../complex/worker/
+docker build -t abbas/multi-client:latest -t  abbas/multi-client:$SHA -f client/Dockerfile client/
+docker build -t abbas/multi-server:latest -t abbas/multi-server:$SHA -f server/Dockerfile server/
+docker build -t abbas/multi-workeri:lastest -t abbas/multi-worker:$SHA -f worker/Dockerfile worker/
 
 docker push abbas/multi-client:latest
 docker push abbas/multi-server:latest
