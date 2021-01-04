@@ -11,7 +11,7 @@ docker push abbas/multi-server:$SHA
 docker push abbas/multi-worker:$SHA
 
 
-kubectl apply -f ../k8s
+kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=abbas/multi-server:$SHA
 kubectl set image deployments/client-deployment client=abbas/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=abbas/multi-worker:$SHA
